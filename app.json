@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/webSite/webSite",
+    "pages/mp/mp",
+    "pages/group/group",
+    "pages/setting/setting"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarBackgroundColor": "#ffffff"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath":"pages/webSite/webSite",
+        "text":"网站导航",
+        "iconPath": "/images/网址.png",
+        "selectedIconPath": "/images/网址(选中).png"
+      },
+      {
+        "pagePath":"pages/mp/mp",
+        "text":"公众号导航",
+        "iconPath": "/images/首页.png",
+        "selectedIconPath": "/images/首页(选中).png"
+      },
+      {
+        "pagePath":"pages/group/group",
+        "text":"群导航",
+        "iconPath": "/images/群导航.png",
+        "selectedIconPath": "/images/群导航(选中).png"
+      },
+      {
+        "pagePath":"pages/setting/setting",
+        "text":"我的",
+        "iconPath": "/images/我的.png",
+        "selectedIconPath": "/images/我的(选中).png"
+      }
+    ]
+  },
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "usingComponents": {
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-image": "@vant/weapp/image/index",
+    "van-tab": "@vant/weapp/tab/index",
+  "van-tabs": "@vant/weapp/tabs/index",
+  "van-index-bar": "@vant/weapp/index-bar/index",
+  "van-index-anchor": "@vant/weapp/index-anchor/index",
+  "van-collapse": "@vant/weapp/collapse/index",
+  "van-collapse-item": "@vant/weapp/collapse-item/index",
+  "van-icon": "@vant/weapp/icon/index"
+  }
+}

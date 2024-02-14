@@ -1,0 +1,118 @@
+<!--pages/group/group.wxml-->
+<view class="page">
+
+  <!--小喇叭-->
+  <view class="header">
+    <view class="notice">
+      <view class="notice-item">长按QQ群号，微信号可复制</view>
+    </view>
+  </view>
+
+  <!--左侧导航栏-->
+  <view class = "sidenav">
+    <view class = "sidenav-desc">分类</view>
+
+      <block wx:for="{{navItems}}">
+         <view class="menu-group{{selectMenuID  == index ? 'active' : ''}}"  data-index="{{index}}"bindtap="switchToRight" > {{item.name}} </view>
+    
+      </block>
+  </view>
+
+  <!--主页面-->
+  <view class="container">
+
+   <!--判断selectMenuID值显示不同页面-->
+   <view wx:if="{{selectMenuID===0}}">
+
+    <view class="section-title">QQ群</view>
+<block wx:for="{{conItemsQQ}}">
+    <view class="card">
+      <view class="card-title" data-number="{{item.number}}" catchlongpress="copyText"> {{item.number}}</view> <!--绑定事件：长按复制-->
+      <view class="card-desc">{{item.desc}}</view>
+    </view>
+</block>
+<view class="section-title">微信群</view>
+<block wx:for="{{conItemsWX}}">
+  <view class="card">
+    <view class="card-title" data-number="{{item.number}}" catchlongpress="copyText">{{item.number}}</view>
+    <view class="card-desc">{{item.desc}}</view>
+  </view>
+</block>
+   </view>
+
+   <view wx:if="{{selectMenuID===1}}">
+
+<view class="section-title">QQ群111</view>
+<block wx:for="{{conItemsQQ}}">
+<view class="card">
+  <view class="card-title" data-number="{{item.number}}" catchlongpress="copyText"> {{item.number}}</view> <!--绑定事件：长按复制-->
+  <view class="card-desc">{{item.desc}}</view>
+</view>
+</block>
+<view class="section-title">微信群</view>
+<block wx:for="{{conItemsWX}}">
+<view class="card">
+<view class="card-title" data-number="{{item.number}}" catchlongpress="copyText">{{item.number}}</view>
+<view class="card-desc">{{item.desc}}</view>
+</view>
+</block>
+</view>
+
+<view wx:if="{{selectMenuID===2}}">
+
+<view class="section-title">QQ群111</view>
+<block wx:for="{{conItemsQQ}}">
+<view class="card">
+  <view class="card-title" data-number="{{item.number}}" catchlongpress="copyText"> {{item.number}}</view> <!--绑定事件：长按复制-->
+  <view class="card-desc">{{item.desc}}</view>
+</view>
+</block>
+<view class="section-title">微信群</view>
+<block wx:for="{{conItemsWX}}">
+<view class="card">
+<view class="card-title" data-number="{{item.number}}" catchlongpress="copyText">{{item.number}}</view>
+<view class="card-desc">{{item.desc}}</view>
+</view>
+</block>
+</view>
+
+<view wx:if="{{selectMenuID===3}}">
+
+<view class="section-title">QQ群111</view>
+<block wx:for="{{conItemsQQ}}">
+<view class="card">
+  <view class="card-title" data-number="{{item.number}}" catchlongpress="copyText"> {{item.number}}</view> <!--绑定事件：长按复制-->
+  <view class="card-desc">{{item.desc}}</view>
+</view>
+</block>
+<view class="section-title">微信群</view>
+<block wx:for="{{conItemsWX}}">
+<view class="card">
+<view class="card-title" data-number="{{item.number}}" catchlongpress="copyText">{{item.number}}</view>
+<view class="card-desc">{{item.desc}}</view>
+</view>
+</block>
+</view>
+
+<view wx:if="{{selectMenuID===4}}">
+
+<view class="section-title">QQ群111</view>
+<block wx:for="{{conItemsQQ}}">
+<view class="card">
+  <view class="card-title" data-number="{{item.number}}" catchlongpress="copyText"> {{item.number}}</view> <!--绑定事件：长按复制-->
+  <view class="card-desc">{{item.desc}}</view>
+</view>
+</block>
+<view class="section-title">微信群</view>
+<block wx:for="{{conItemsWX}}">
+<view class="card">
+<view class="card-title" data-number="{{item.number}}" catchlongpress="copyText">{{item.number}}</view>
+<view class="card-desc">{{item.desc}}</view>
+</view>
+</block>
+</view>
+
+
+  </view>
+<!-- page -->
+</view>

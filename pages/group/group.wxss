@@ -1,0 +1,102 @@
+/* pages/group/group.wxss */
+page{
+  background:#f6f6f6; 
+}
+
+/*顶部*/
+.header{
+  background-color:#FCFCFC;
+  margin:0px 0px 0px 20%;
+  padding:0px 0px 0px 30px;
+}
+
+.notice{
+  color:#4A4A4A;
+  padding-right: 30px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.notice-item{
+  padding-right: 16px;
+  padding-left: 16px;
+  padding-top:8px;
+  padding-bottom: 8px;
+  color: #505b67;
+  font-size: 12px;
+  box-shadow:0 0 6px 2px rgba(0,0,0,0.05);/*元素周围上一层阴影，突出中间内容*/
+  border-radius:4px;
+}
+
+/*左侧边栏  */
+.sidenav{
+  background-color:#131821;
+  position: fixed;
+  /* 设置top,left,bottom,right,元素位置相对浏览器窗口固定 */
+  top: 0;
+  bottom:0; 
+  left: 0;
+  padding:40px 0 60px;
+  width:20%;
+  text-align: center;
+  border-radius:4px;
+}
+
+.sidenav-desc{text-align:center;
+  font-size:14px;
+  color:#505b67;
+  margin-top: 20px;
+  margin-bottom:30px;
+}
+.menu-group{
+  height: 30px;
+  line-height: 30px;
+  padding:14px 0 15px;
+  border-bottom:1px solid #1e2631;
+  font-size: 14px;
+  color: #505b67;
+}
+.menu-groupactive{
+  padding:14px 0 15px;
+  color:#fff;
+}
+
+/*主页面*/
+.container{
+  margin:15% 0px 0px 20%;
+}
+
+.section-title{
+  margin-bottom:10px;
+  color:#505b67;
+  font-size:18px;
+  border-left: 5px solid #505b67; padding-left:13px; 
+  font-weight:500;
+  font-size: 1.5rem;
+}
+
+/*卡片样式*/
+.card{
+  background-color:#ffffff;
+  box-shadow:0 0 6px 10px rgba(0, 0, 0, 0.05);
+  margin:16px;
+  padding:16px;
+  border-radius:6px;
+}
+
+/*卡片标题字体设置*/
+.card-title{
+  color:#131821;
+  font-size:14px;
+  font-weight:900
+}
+
+/*卡片简介字体设置*/
+  .card-desc{
+    color:#505b67;
+    font-size:13px;
+    height:24px;
+    overflow:scroll;/*控制溢出，scorll:溢出时显示滚动条*/
+    margin-top: 5px;
+    margin-bottom:5px
+}

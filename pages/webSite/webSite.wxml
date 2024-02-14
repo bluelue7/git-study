@@ -1,0 +1,28 @@
+<!--pages/webSite/webSite.wxml-->
+<view class="banner">
+   <swiper indicator-dots indicator-color="rgba(255,255,255,0.5)"
+   indicator-active-color="#fff" circular autoplay interval="4000">
+   <swiper-item><image src="/images/楼.jpeg"></image></swiper-item>
+   <swiper-item><image src="/images/图书馆.jpg"></image></swiper-item>
+   <swiper-item><image src="/images/湖.jpeg"></image></swiper-item>
+   </swiper>
+</view>
+
+<van-cell-group title="学校信息" inset>
+  <block wx:for="{{item1}}">
+  <van-cell catchlongpress="copyText" title="{{item.title}}"  value="{{item.value}}" label="{{item.label}}" data-label="{{item.label}}"/>
+ 
+</block>
+</van-cell-group>
+
+<van-cell-group title="课程学术" inset>
+  <block wx:for="{{item2}}">
+    <van-cell catchlongpress="copyText" title="{{item.title}}" value="{{item.value}}" label="{{item.label}}" data-label="{{item.label}}"/>
+  </block>
+</van-cell-group>
+
+<van-cell-group title="学生生活" inset>
+  <block wx:for="{{item3}}">
+    <van-cell catchlongpress="copyText" title="{{item.title}}" value="{{item.value}}" label="{{item.label}}" data-label="{{item.label}}"/>
+  </block>
+</van-cell-group>

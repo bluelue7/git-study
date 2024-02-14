@@ -1,0 +1,25 @@
+<!--pages/setting/setting.wxml-->
+<van-cell
+  is-link
+  title="反馈"
+  link-type="navigateTo"
+  url="/pages/setback/setback"
+/>
+<van-cell
+  is-link
+  title="我的"
+  link-type="navigateTo"
+  url="/pages/logs/logs"
+/>
+<van-cell
+  is-link
+  title="历史记录"
+  link-type="navigateTo"
+  url="/pages/logs/logs"
+/>
+<van-cell
+  is-link
+  title="什么"
+  link-type="navigateTo"
+  url="/pages/logs/logs"
+/>
